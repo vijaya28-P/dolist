@@ -137,69 +137,6 @@ class _TaskPageState extends State<TaskPage> {
           ],
         ),
       ),
-      // body: Consumer<TaskProvider>(
-      //   builder: (context, provider, child) {
-      //
-      //     if (provider.tasks.isEmpty) {
-      //       return const Center(
-      //         child: Text("No Tasks Available"),
-      //       );
-      //     }
-      //
-      //     return ListView.builder(
-      //       itemCount: provider.tasks.length,
-      //       itemBuilder: (context, index) {
-      //
-      //         Task task = provider.tasks[index];
-      //
-      //         return Card(
-      //           color: task.isCompleted ? Colors.deepPurple[100] : Colors.white,
-      //           margin: const EdgeInsets.symmetric(
-      //               horizontal: 10, vertical: 5),
-      //           child: ListTile(
-      //
-      //             title: Text(
-      //               task.title,
-      //             ),
-      //
-      //             leading: Checkbox(
-      //               value: task.isCompleted,
-      //               onChanged: (value) {
-      //                 provider.toggleTask(task.id);
-      //               },
-      //             ),
-      //
-      //             trailing:
-      //                 Wrap(
-      //                   children: [
-      //                     IconButton(
-      //                       icon: const Icon(Icons.edit),
-      //                       onPressed: () {
-      //                         addTaskDialog(task);
-      //                       },
-      //                     ),
-      //                     SizedBox(width: 2,),
-      //                     IconButton(
-      //                       icon: const Icon(Icons.delete),
-      //                       onPressed: () {
-      //                         provider.deleteTask(task.id);
-      //                       },
-      //                     ),
-      //                   ],
-      //                 ),
-      //             // IconButton(
-      //             //   icon: const Icon(Icons.delete),
-      //             //   onPressed: () {
-      //             //     provider.deleteTask(task.id);
-      //             //   },
-      //             // ),
-      //           ),
-      //         );
-      //       },
-      //     );
-      //
-      //   },
-      // ),
       body: StreamBuilder<List<Task>>(
         stream: context.read<TaskProvider>().getTasksStream(),
         builder: (context, snapshot) {

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "963494923277",
+    "project_id": "dolist-656fe",
+    "storage_bucket": "dolist-656fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963494923277:android:6aaac8bdc66c8183c85944",
+        "android_client_info": {
+          "package_name": "com.herody.dolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArsQTvLOx6C1x8tJaowTjGauBzX9Utm9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
